@@ -107,7 +107,7 @@
       line-height: 1.15; letter-spacing: -0.5px;
       max-width: 580px; margin: 0 auto 14px;
     }
-    .hero h1 em { font-style: normal; color: #CFE1F1; }
+    .hero h1 em { font-style: normal; color: var(--white); }
     .hero-sub {
       font-size: 16px; color: rgba(255,255,255,0.80);
       max-width: 420px; margin: 0 auto;
@@ -255,7 +255,7 @@
     .benefit-text span { font-size: 13px; color: var(--text-muted); }
 
     /* ─── WINDOW TYPES ─── */
-    .types-section { background: var(--blue-dark); color: var(--white); }
+    .types-section { background: #3A5C8A; color: var(--white); }
     .types-section .section-title { color: var(--white); }
     .types-section .section-sub { color: rgba(255,255,255,0.7); }
     .types-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 640px; margin: 0 auto 40px; }
@@ -277,7 +277,7 @@
     .type-label span { font-size: 11px; color: #88BBD8; opacity: 0.8; }
     .btn-cta {
       display: inline-flex; align-items: center; gap: 8px;
-      background: #CFE1F1; color: var(--blue-dark); font-size: 17px; font-weight: 800;
+      background: #CFE1F1; color: #3A5C8A; font-size: 17px; font-weight: 800;
       padding: 16px 36px; border-radius: var(--radius); cursor: pointer;
       letter-spacing: -0.3px; transition: transform 0.12s, box-shadow 0.12s; border: none;
     }
@@ -361,14 +361,14 @@
   <div class="hero-bg-wrap">
   <section class="hero">
     <div class="hero-eyebrow">Free &middot; No Obligation &middot; Takes 60 Seconds</div>
-    <h1>What Do New Windows Cost <em>in Florida?</em></h1>
+    <h1>What Would New Windows Cost <em>for Your Home?</em></h1>
     <p class="hero-sub">Enter your ZIP code below to see local Florida window prices &mdash; including impact-rated options.</p>
   </section>
 
   <!-- ZIP ENTRY -->
   <div class="zip-wrap" id="zipWrap">
     <div class="zip-card">
-      <h2>Get Florida Window Prices</h2>
+      <h2>Get Local Window Prices</h2>
       <p>Real local prices in less than 60 seconds.</p>
       <div class="zip-input-row">
         <input type="text" id="zipInput" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter ZIP Code" autocomplete="postal-code" />
