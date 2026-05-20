@@ -255,38 +255,39 @@
     .benefit-text span { font-size: 13px; color: var(--text-muted); }
 
     /* ─── WINDOW TYPES ─── */
-    .types-section { background: #3A5C8A; color: var(--white); }
+    .types-section { background: #004AAA; color: var(--white); }
     .types-section .section-title { color: var(--white); }
     .types-section .section-sub { color: rgba(255,255,255,0.7); }
     .types-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 640px; margin: 0 auto 40px; }
     @media (min-width: 520px) { .types-grid { grid-template-columns: repeat(3, 1fr); } }
     .type-card {
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,215,0,0.2);
+      background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.12);
       border-radius: 10px; overflow: hidden;
       transition: transform 0.15s, border-color 0.15s;
     }
-    .type-card:hover { transform: translateY(-2px); border-color: rgba(255,215,0,0.5); }
+    .type-card:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.3); }
     .type-img { width: 100%; height: 110px; object-fit: cover; display: block; }
     .type-svg-wrap {
       height: 110px; display: flex; align-items: center; justify-content: center;
-      background: rgba(255,215,0,0.07);
+      background: rgba(0,0,0,0.22);
     }
     .type-svg-wrap svg { height: 72px; width: auto; color: #88BBD8; }
-    .type-label { padding: 10px 10px 12px; text-align: center; }
-    .type-label strong { display: block; font-size: 13px; font-weight: 700; color: #88CCEE; margin-bottom: 2px; }
-    .type-label span { font-size: 11px; color: #88BBD8; opacity: 0.8; }
+    .type-label { padding: 10px 10px 14px; text-align: center; }
+    .type-label strong { display: block; font-size: 13px; font-weight: 700; color: #ffffff; margin-bottom: 2px; }
+    .type-label span { font-size: 11px; color: rgba(255,255,255,0.6); }
     .btn-cta {
       display: inline-flex; align-items: center; gap: 8px;
-      background: #CFE1F1; color: #3A5C8A; font-size: 17px; font-weight: 800;
+      background: var(--orange); color: var(--white); font-size: 17px; font-weight: 800;
       padding: 16px 36px; border-radius: var(--radius); cursor: pointer;
       letter-spacing: -0.3px; transition: transform 0.12s, box-shadow 0.12s; border: none;
     }
     .btn-cta svg.icon { width: 16px; height: 16px; }
     .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
 
+
     /* ─── IMPACT BADGE ─── */
     .impact-badge {
-      display: inline-block; background: #CFE1F1; color: var(--blue-dark);
+      display: inline-block; background: #CFE1F1; color: #004AAA;
       font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
       padding: 2px 7px; border-radius: 4px; margin-top: 4px;
     }
@@ -633,7 +634,7 @@
   <!-- WINDOW TYPES -->
   <section class="section types-section">
     <h2 class="section-title">We Cover All Window Styles &amp; Types</h2>
-    <p class="section-sub">Standard or impact-rated &mdash; whatever your Florida home needs, we&rsquo;ll find local pros who can install it.</p>
+    <p class="section-sub">Whatever style fits your home, we&rsquo;ll find local pros who can install it.</p>
     <div class="types-grid">
       <div class="type-card">
         <div class="type-svg-wrap">
@@ -685,19 +686,21 @@
         <div class="type-label">
           <strong>Bay Windows</strong>
           <span>Architectural statement</span>
+          <div class="impact-badge">Impact Available</div>
         </div>
       </div>
       <div class="type-card">
         <div class="type-svg-wrap">
           <svg viewBox="0 0 16 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="20.5" width="14" height="8" stroke="currentColor"/>
-            <line x1="7.5" y1="28" x2="7.5" y2="20" stroke="currentColor"/>
-            <path d="M0.507884 20.1429C0.69498 14.2686 4.1796 11.5 7.5 11.5C10.8204 11.5 14.305 14.2687 14.4921 20.1429H0.507884Z" stroke="currentColor"/>
+            <path d="M0.5 28.1637V11.6671L4.5 12.8363V29.3329L0.5 28.1637Z" stroke="currentColor"/>
+            <path d="M14.5 28.1637V11.6671L10.5 12.8363V29.3329L14.5 28.1637Z" stroke="currentColor"/>
+            <path d="M4.5 12.5H7.5V29.5H4.5V12.5Z" stroke="currentColor"/>
+            <rect x="7.5" y="12.5" width="3" height="17" stroke="currentColor"/>
           </svg>
         </div>
         <div class="type-label">
-          <strong>Picture Windows</strong>
-          <span>Maximum light &amp; views</span>
+          <strong>Bow Windows</strong>
+          <span>Sweeping curved views</span>
           <div class="impact-badge">Impact Available</div>
         </div>
       </div>
@@ -717,15 +720,15 @@
       <div class="type-card">
         <div class="type-svg-wrap">
           <svg viewBox="0 0 16 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.5 28.1637V11.6671L4.5 12.8363V29.3329L0.5 28.1637Z" stroke="currentColor"/>
-            <path d="M14.5 28.1637V11.6671L10.5 12.8363V29.3329L14.5 28.1637Z" stroke="currentColor"/>
-            <path d="M4.5 12.5H7.5V29.5H4.5V12.5Z" stroke="currentColor"/>
-            <rect x="7.5" y="12.5" width="3" height="17" stroke="currentColor"/>
+            <rect x="0.5" y="20.5" width="14" height="8" stroke="currentColor"/>
+            <line x1="7.5" y1="28" x2="7.5" y2="20" stroke="currentColor"/>
+            <path d="M0.507884 20.1429C0.69498 14.2686 4.1796 11.5 7.5 11.5C10.8204 11.5 14.305 14.2687 14.4921 20.1429H0.507884Z" stroke="currentColor"/>
           </svg>
         </div>
         <div class="type-label">
-          <strong>Bow Windows</strong>
-          <span>Sweeping curved views</span>
+          <strong>Specialty &amp; More</strong>
+          <span>Custom shapes &amp; sizes</span>
+          <div class="impact-badge">Impact Available</div>
         </div>
       </div>
     </div>
