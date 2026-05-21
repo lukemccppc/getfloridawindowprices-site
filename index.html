@@ -120,8 +120,12 @@
       box-shadow: 0 8px 40px rgba(0,0,0,0.20);
       padding: 28px 24px 24px; max-width: 480px; margin: 0 auto; text-align: center;
     }
-    .zip-card h2 { font-size: 21px; font-weight: 800; color: var(--blue-dark); margin-bottom: 6px; }
-    .zip-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+    .zip-card h2 { font-size: 21px; font-weight: 800; color: var(--blue-dark); margin-bottom: 3px; }
+    .zip-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; }
+    @media (min-width: 768px) {
+      .zip-card h2 { margin-bottom: 6px; }
+      .zip-card p { margin-bottom: 20px; }
+    }
     .zip-input-row { display: flex; flex-direction: column; gap: 10px; }
     .zip-input-row input {
       width: 100%; padding: 15px 16px;
